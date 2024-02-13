@@ -1,5 +1,7 @@
 Changed speed from 3 to 7
+
 Changed gravity to -5f
+
 Changed jumpSpeed to 30
 
 Changing these three values made the players move and turn more quickly, which made playing less frustrating and more exciting.
