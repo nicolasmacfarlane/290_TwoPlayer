@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class ColliderOne : MonoBehaviour
 {        
-    private static int twoScore;
+    private UIManager ui;
+
+    void Start()
+    {
+        ui = FindObjectOfType<UIManager>();
+    }
 
     private void OnTriggerEnter (Collider other)
     {
         if (other.gameObject.CompareTag("P2"))
         {
-            twoScore += 1;
-            Debug.Log("Player two has jumped " + twoScore + " times!");
+            ui.AddScore2();
         }
     }
 }
