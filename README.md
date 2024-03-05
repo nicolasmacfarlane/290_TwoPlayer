@@ -14,3 +14,9 @@ Changing the move speed and adding coins pressures the players to collect coins 
 Unity 6
 
 Added UI point scoring, set win value to 5 and displayed win text when win value is met.
+
+Unity 7
+
+Added a few boxes that players can push around in order to jump to higher platforms.
+Already added a coin system previously, hooked it up to the inventory system.
+Created the managers and inventory system.
