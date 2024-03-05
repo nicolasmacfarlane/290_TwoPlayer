@@ -120,4 +120,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61143cfe56eaf224b9ef85e3869f32ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: {fileID: 769111881786767339}
+  coinObj: {fileID: 769111881786767339}
+  coin: coin
