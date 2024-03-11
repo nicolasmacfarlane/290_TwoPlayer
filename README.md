@@ -23,4 +23,5 @@ Created the managers and inventory system.
 
 
 Unity 8
+
 Removed the leap frog point system and changed the win condition to be whichever player collects the most coins. There are two players and 15 coins, so the first player to collect 8 coins wins. This makes for a fun, fast-paced racing game that takes under a minute to complete.
