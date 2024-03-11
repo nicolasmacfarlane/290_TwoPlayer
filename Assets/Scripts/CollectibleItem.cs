@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class CollectibleItem : MonoBehaviour
 {
+    private UIManager ui;
     [SerializeField] string coin;
     float rotateSpeed = 100f;
     Vector3 rotationDirection = new Vector3(0, 0, 1);
 
-    private static int oneCoins;
-    private static int twoCoins;
+    void Start()
+    {
+        ui = FindObjectOfType<UIManager>();
+    }
+
     void Update()
     {
         transform.Rotate(rotateSpeed * rotationDirection * Time.deltaTime);
@@ -21,14 +25,14 @@ public class CollectibleItem : MonoBehaviour
 
         if (other.gameObject.GetComponent<PlayerOne>())
         {
-            oneCoins += 1;
-            Debug.Log ("Player one has " + oneCoins + " coins!");
+            ui.AddScore1();
+            Debug.Log ("Player one got a point");
         }
 
         if (other.gameObject.GetComponent<PlayerTwo>())
         {
-            twoCoins += 1;
-            Debug.Log ("Player two has " + twoCoins+ " coins!");
+            ui.AddScore2();
+            Debug.Log ("Player two got a point");
         }
 
         Destroy (this.gameObject);

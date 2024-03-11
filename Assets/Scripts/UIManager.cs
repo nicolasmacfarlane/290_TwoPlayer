@@ -31,12 +31,12 @@ public class UIManager : MonoBehaviour
 
     void Update()
     {
-        if (oneScore >= 5)
+        if (oneScore >= 8)
         {
             winText.text = "Player 1 Wins!";
         }
 
-        else if (twoScore >= 5)
+        else if (twoScore >= 8)
         {
             winText.text = "Player 2 Wins!";
         }
